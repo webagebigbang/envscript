@@ -21,9 +21,7 @@ Executing Terraform Script
 
 terraform init
 
-terraform plan -var="security_group_name=my-security-group" -var="pem_file_name=my-key"
-
-terraform apply -var="security_group_name=my-security-group" -var="pem_file_name=my-key"
+terraform plan -var="security_group_name=your-security-group-name" -var="pem_file_name=your-pem-file-name" -var="existing_vpc_id=your-existing-vpc-id"
 
 terraform apply -var="security_group_name=my-security-group" -var="pem_file_name=my-key" -auto-approve
 
